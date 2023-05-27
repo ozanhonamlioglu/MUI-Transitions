@@ -13,8 +13,6 @@ type CustomProps = {
 
 const AnimatedButton = styled(Button, { shouldForwardProp: (props) => shouldForwardProp(['text'], props) })<CustomProps>(
   ({ theme, text }) => {
-    console.log(text);
-
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     if (ctx) {
@@ -28,7 +26,7 @@ const AnimatedButton = styled(Button, { shouldForwardProp: (props) => shouldForw
       height: 80,
       width: (mText?.width || 1) + 40,
       letterSpacing: 3,
-      color: '#fff',
+      color: '#333',
       '& span': {
         transition: 'all 500ms'
       },

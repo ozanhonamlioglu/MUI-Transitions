@@ -3,7 +3,7 @@ import React from 'react';
 
 import PageLayout from 'layouts/PageLayout';
 
-import { BorderGrowingButton, BorderSwitchingButton, RotatedBackgroundButton } from 'components/Buttons';
+import { BorderGrowingButton, BorderSwitchingButton, RotatedBackgroundButton } from 'components/buttons';
 
 const Home = () => {
   return (

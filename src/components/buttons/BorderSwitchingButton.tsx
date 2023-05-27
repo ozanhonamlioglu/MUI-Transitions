@@ -8,7 +8,7 @@ const BorderSwitchingButton = styled(Button)(({ theme }) => ({
   paddingLeft: 40,
   paddingRight: 40,
   letterSpacing: 3,
-  color: '#fff',
+  color: '#333',
   '&:hover': {
     backgroundColor: 'transparent',
     border: 0

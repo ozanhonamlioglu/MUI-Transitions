@@ -1,16 +1,18 @@
-import './index.css';
-import CssBaseline from '@mui/material/CssBaseline';
 import React from 'react';
 
-import Routing from 'Routing';
+import { ThemeProvider } from 'contexts/ThemeContext';
+import Routing from 'routing';
 
-function App() {
+import ThemeOptimization from 'utils/theme';
+
+const App = () => {
   return (
-    <>
-      <Routing />
-      <CssBaseline />
-    </>
+    <ThemeProvider>
+      <ThemeOptimization>
+        <Routing />
+      </ThemeOptimization>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
