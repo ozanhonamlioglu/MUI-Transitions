@@ -1,6 +1,9 @@
+import { useTheme } from '@mui/material';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import React from 'react';
+
+import { transform } from 'typescript';
 
 export const shouldForwardProp = <CustomProps extends Record<string, unknown>>(
   props: Array<keyof CustomProps>,
@@ -62,9 +65,10 @@ const AnimatedButton = styled(Button, { shouldForwardProp: (props) => shouldForw
 const RotatedBackgroundButton = ({ text }: { text: string }) => {
   const firstLetter = text[0];
   const rest = text.slice(1);
+  const theme = useTheme();
 
   return (
-    <AnimatedButton disableRipple text={text}>
+    <AnimatedButton disableRipple text={text} sx={{ color: theme.palette.text.primary }}>
       <span>{firstLetter}</span>
       {rest}
     </AnimatedButton>
