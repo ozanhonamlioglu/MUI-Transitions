@@ -1,46 +1,17 @@
-# Getting Started with Create React App
+# What Is It?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project contains bunch of animated mui components. I try to make it easy to copy into one of your project instead of a big npm library.  
+The animated components are mostly consist of modified mui components with styled function, so this approach keep the components running on high performance.
 
-## Available Scripts
+# Who Is It For
 
-In the project directory, you can run:
+I tried to make this components available to everyone who uses mui in their frontend project. The components are not tied to React, because I create them with styled function. So even if you use different frameworks, there is a chance that you can still benefit.
 
-### `yarn start`
+# Can I Modify Your Components?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Absolutely yes, but you have to refer the base component API section at the mui library.  
+Some of the advanced component's dimensions are not flexible, which means they are static. So this is all up to you whether modify or not.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# How Can I Modify Then?
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Well, the way I follow is css modification so any of mui component's API section is the best place for you too.

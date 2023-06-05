@@ -7,7 +7,10 @@ import React, { PropsWithChildren } from 'react';
 import DarkLightSwitch from 'components/DarkLightSwitch';
 import GrowingBorderMenu from 'components/menu/GrowingBorderMenu';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = [
+  { name: 'Inputs', path: '/' },
+  { name: 'Data Display', path: '/data-display' }
+];
 const PageLayout: React.FC<PropsWithChildren<ContainerProps>> = ({ children, ...props }) => {
   return (
     <>

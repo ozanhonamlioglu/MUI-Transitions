@@ -43,6 +43,7 @@
         },
         "pathGroupsExcludedImportTypes": ["builtin"]
       }
-    ]
+    ],
+    "react/display-name": "off"
   }
 }

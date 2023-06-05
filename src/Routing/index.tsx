@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { lazy } from 'react';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-const Home = React.lazy(() => import('pages/Home'));
+import Loadable from 'components/common/Loadable';
+
+const Inputs = Loadable(lazy(() => import('pages/Inputs')));
+const DataDisplay = Loadable(lazy(() => import('pages/DataDisplay')));
 
 const Routing = () => (
   <BrowserRouter>
     <Routes>
-      <Route index path="/" element={<Home />} />
+      <Route index path="/" element={<Inputs />} />
+      <Route path="/data-display" element={<DataDisplay />} />
     </Routes>
   </BrowserRouter>
 );

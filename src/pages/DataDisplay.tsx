@@ -8,19 +8,12 @@ import { BorderGrowingButton, BorderSwitchingButton, RotatedBackgroundButton } f
 
 const Home = () => {
   const theme = useTheme();
+
   return (
     <PageLayout sx={{ padding: 10 }}>
       <Grid container spacing={10}>
         <Grid item xs={12}>
           <BorderGrowingButton disableFocusRipple>Forgot passworsd</BorderGrowingButton>
-        </Grid>
-        <Grid item xs={12}>
-          <BorderSwitchingButton disableRipple sx={{ color: theme.palette.text.primary }}>
-            Login with
-          </BorderSwitchingButton>
-        </Grid>
-        <Grid item xs={12}>
-          <RotatedBackgroundButton text="Facebook" />
         </Grid>
       </Grid>
     </PageLayout>
